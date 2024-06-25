@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+  </head>
+  <body>
+    <div class="progress">
+      <div class="progress__bar">
+        <svg class="progress__bar-svg" width="60" height="60">
+          <circle
+            class="progress__bar-circle-bg"
+            cx="30"
+            cy="30"
+            r="29"
+            fill="none"
+            stroke="#ffffff"
+            stroke-opacity="50%"
+            stroke-width="2"
+          ></circle>
+          <circle
+            class="progress__bar-circle-fg"
+            cx="30"
+            cy="30"
+            r="29"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+          ></circle>
+        </svg>
+        <div class="progress__bar-inner">
+          <span class="progress__bar-inner-current-number">0</span>
+          <span class="progress__bar-inner-symbol">/</span>
+          <span class="progress__bar-inner-total-number">7</span>
+        </div>
+      </div>
+      <div class="progress__description">
+        <div class="progress__description-name">Чеклист</div>
+        <div class="progress__description-completed">
+          Выполнено:
+          <span class="progress__description-current-number">0</span>
+          из
+          <span class="progress__description-total-number">7</span>
+          действий
+        </div>
+        <div class="progress__description-task">
+          Следующее действие:
+          <p class="progress__description-task-text">
+            Созвониться с клиентом до 23.05.24 12:00
+          </p>
+        </div>
+      </div>
+      <button class="progress__button" type="button">Открыть чеклист</button>
+    </div>
+  </body>
+</html>
+
